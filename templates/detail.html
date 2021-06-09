@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a href="/"><img src="../static/img/udayagiri.png" alt="Its our Brand" width="80px" height="80px"></a>
+
+
+    <div class="card-container">
+        <div class="float-layout" style="margin-left: 150px">
+            <div class="card-image" >
+                <img src="{{ query_set.cover }}" alt="cover photo" title="{{ query_set.title }}" style="border-radius: 30px; height: 80vh; width: auto"/>
+                <div class="card">
+                    <div class="card-title" style="text-transform: uppercase">{{ query_set.title }}</div>
+                    <div class="card-desc">
+                        <h2 style="text-transform: uppercase">{{ query_set.kind }}</h2>
+                        <div class="desc">
+                            {% if query_set.directors %}
+                                {% for dir in query_set.directors %}
+                                    {{ dir }}
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="rate">
+                            IMdB rating: {{ query_set.rating }}
+                        </div>
+
+                        <div class="year">
+                            {% if query_set.release %}
+                                {{ query_set.release }}
+                            {% else %}
+                                {{ query_set.year }}
+                            {% endif %}
+                        </div>
+
+                        <div class="plot">
+                            Plot: {{ query_set.plot[0] }}
+                        </div>
+                    <div class="cast">
+                    <h1>Cast</h1>
+                    <ul>
+                        {% for cast in query_set.cast %}
+                            <li>{{ cast[0] }} - {{ cast[1] }}</li>
+                        {% endfor %}
+                    </ul>
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
+

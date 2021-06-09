@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a href="/"><img src="../static/img/udayagiri.png" alt="Its our Brand" width="80px" height="80px"></a>
+
+    <div class="wrapper" style="margin-left: 150px">
+        <div class="cards_wrap">
+            {% for query in query_set %}
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="{{ query.cover }}" alt="car" style="border-radius: 30px" />
+                        </div>
+                        <div class="card_bottom">
+                            <div class="card_category">
+                                {{ query.kind }}
+                            </div>
+                            <div class="card_info">
+                                <div style="text-align: center;">
+                                <h1><a href="/detail?id={{ query.id }}" class="title">{{ query.title }}</a></h1>
+                                    </div>
+                            </div>
+                            <div class="card_creator">
+                                {{ query.year }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!--End Media Cards-->
+
+{% endblock content %}
+

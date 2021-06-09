@@ -1,0 +1,268 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  background: url("../img/back.jpg") top center no-repeat;
+  position: relative;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 512px) {
+  body {
+    background-attachment: fixed;
+  }
+}
+
+a {
+  color: #ec0101;
+}
+
+a:hover {
+  color: #36d8c3;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+#main {
+  position: relative;
+}
+
+.card_top img {
+  width: 80%;
+  height: 80%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards_wrap .card_item {
+  width: 25%;
+  padding: 10px;
+}
+
+.cards_wrap .card_top {
+  width: 100%;
+  height: auto;
+  padding: 10px 10px 0;
+}
+
+.cards_wrap .card_bottom {
+  padding: 15px;
+}
+
+.cards_wrap .card_bottom .card_category {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.cards_wrap .card_bottom .card_info .title h1{
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-variant: titling-caps;
+  color: #ec0101;
+}
+
+.cards_wrap .card_bottom .card_info .title:hover {
+  color: #cd0a0a;
+}
+
+.cards_wrap .card_bottom .card_creator {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 528px) {
+  .cards_wrap .card_item {
+    width: 100%;
+  }
+}
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 30%;
+    background: #f1f1f1;
+  }
+
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 12%;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  form.example button:hover {
+    background: black;
+  }
+
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .heading-1{
+    font-weight: bold;
+    font-size: 70px;
+
+  }
+
+  .heading-2{
+    font-style: italic;
+  }
+
+
+
+
+.float-layout {
+  padding: 5px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card-container {
+  margin-top:30px;
+  overflow: hidden;
+}
+
+.card {
+  background-color:transparent;
+  color: black;
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 50%;
+  float: right;
+}
+
+.card-title {
+  border: gray;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color:white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 20px;
+}
+
+.card-desc {
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+  color:white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.desc {
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+  color:#F5CBA7;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rate {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  color:#BDC3C7 ;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.year {
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color:#5DADE2;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.plot{
+  padding: 2px;
+  font-size: 23px;
+  text-align: justify-all;
+  font-weight: bolder;
+}
+.cast{
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+/*add this it*/
+.card-image {
+  display: flex;
+}
+/*-------------*/
+
+div.card-image img {
+  width: 50%;
+  height: auto;
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*add this it*/
+  .card-image {
+     flex-direction: column;
+  }
+  /*----------------------*/
+
+  .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}

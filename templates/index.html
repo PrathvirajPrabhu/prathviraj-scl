@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <img src="../static/img/udayagiri.png" alt="Its our Brand" width="80px" height="80px">
+
+    <div style="margin-top: 200px; margin-left: 10px">
+        <h1 class="heading-1" style="margin: 0 0 0 0">UDAYAGIRI TALKIES</h1>
+        <h1 class="heading-2" style="margin: 0 0 20px 0 ">Unlimited Movies,TV series and more</h1>
+    </div>
+    <div>
+    <form align="center" class="example" action="/search">
+        <label>
+            <input type="text" placeholder="Find your movies,series..." name="search" required="">
+        </label>
+        <button type="submit"><strong>GET STARTED</strong></button>
+    </div>
+
+
+{% endblock content %}
+
+
